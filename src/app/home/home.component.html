@@ -15,33 +15,11 @@
 <!-- Deck of cards of games-->
 <div class="row">
     <div class = "col">
-        <div class="card">
-            <img src ="http://via.placeholder.com/640x360" class="card-img-top" alt="placeholder">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class = "row">
+            <div *ngFor = "let item of cardList" class = "col">
+                <app-card-item [data] = "item"></app-card-item>
             </div>
         </div>
     </div>
-    <div class = "col">
-        <div class="card">
-            <img src ="http://via.placeholder.com/640x360" class="card-img-top" alt="placeholder">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </div>
-    <div class = "col">
-        <div class="card">
-            <img src ="http://via.placeholder.com/640x360" class="card-img-top" alt="placeholder">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </div>
+
 </div>
