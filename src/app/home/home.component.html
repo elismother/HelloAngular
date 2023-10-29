@@ -1,10 +1,10 @@
 <!-- logo-->
+<!-- mission statement-->
 <div class = "row" >
     <div class ="col d-flex justify-content-center">
         <img class = "mt-4" src ="http://via.placeholder.com/640x360">
     </div>
 </div>
-<!-- mission statement-->
 <div class = "row">
     <div class = "col">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor hic quia doloremque praesentium, nostrum alias delectus enim sunt repellendus illum quaerat officia possimus esse! Perferendis eaque autem adipisci placeat.
@@ -12,14 +12,10 @@
         Placeat, optio voluptatem beatae impedit modi rem odio pariatur quod aut asperiores! Reiciendis, dolorum maiores debitis molestiae tenetur reprehenderit? Eius labore cupiditate debitis harum odit consectetur blanditiis vel id excepturi.</p>
     </div>
 </div>
-<!-- Deck of cards of games-->
-<div class="row">
-    <div class = "col">
-        <div class = "row">
-            <div *ngFor = "let item of cardList" class = "col">
-                <app-card-item [data] = "item"></app-card-item>
-            </div>
-        </div>
-    </div>
+<app-card-list [cardList]=" cardList"></app-card-list>
+<app-card-list [cardList]=" cardList"></app-card-list>
+<app-card-list [cardList]=" cardList"></app-card-list>
+<app-card-list [cardList]=" cardList"></app-card-list>
+<app-card-list [cardList]=" cardList"></app-card-list>
 
-</div>
+<!-- Deck of cards of games-->
