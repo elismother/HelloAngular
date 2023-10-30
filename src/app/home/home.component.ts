@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -24,4 +25,14 @@ export class HomeComponent {
       imgSrc: "http://via.placeholder.com/640x360"  
     }
   ];
+
+
+  games = this.data.mockGameArray$;
+
+  constructor (private data: DataService) {
+
+    this.data.getAllGames();
+    this.data.getAllGames();
+
+  }
 }

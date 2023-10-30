@@ -18,4 +18,8 @@
 <app-card-list [cardList]=" cardList"></app-card-list>
 <app-card-list [cardList]=" cardList"></app-card-list>
 
+<ul>
+    <li *ngFor="let item of games | async"> {{ item.name}}</li>
+</ul>
+
 <!-- Deck of cards of games-->
