@@ -6,9 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-item.component.css']
 })
 export class CardItemComponent {
-  @Input() data: any ={
-    title: "Placeholder Title",
-    text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    imgSrc: "http://via.placeholder.com/640x360"  
+  @Input() data: any = {
+    gameId: "",
+    title: "",
+    shortDescription: "",
+    description: "",
+    image: "",
+    features: []
   };
 }

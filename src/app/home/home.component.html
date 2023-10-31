@@ -12,14 +12,12 @@
         Placeat, optio voluptatem beatae impedit modi rem odio pariatur quod aut asperiores! Reiciendis, dolorum maiores debitis molestiae tenetur reprehenderit? Eius labore cupiditate debitis harum odit consectetur blanditiis vel id excepturi.</p>
     </div>
 </div>
-<app-card-list [cardList]=" cardList"></app-card-list>
-<app-card-list [cardList]=" cardList"></app-card-list>
-<app-card-list [cardList]=" cardList"></app-card-list>
-<app-card-list [cardList]=" cardList"></app-card-list>
-<app-card-list [cardList]=" cardList"></app-card-list>
+<app-card-list [cardList]=" games"></app-card-list>
 
-<ul>
-    <li *ngFor="let item of games | async"> {{ item.name}}</li>
-</ul>
+<pre>{{ games | async | json }}</pre>
+
+<!-- <ul>
+    <li *ngFor="let item of games | async"> {{ item.title}}</li>
+</ul> -->
 
 <!-- Deck of cards of games-->
